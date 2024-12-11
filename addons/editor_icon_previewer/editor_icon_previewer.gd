@@ -3,7 +3,7 @@ extends EditorPlugin
 
 var icon_window
 var suppress_warnings = false
-@onready var property_input = $OptionButton
+#@onready var property_input = $OptionButton
 
 
 func _enter_tree():
@@ -75,9 +75,9 @@ func convert_to_texture():
 #		icon_rect.texture = get_icon(selected_node.get_class())
 #		node_input.text = selected_node_path
 		
-		property_input.clear()
-		for p in properties:
-			if p["class_name"] == "Texture": property_input.add_item(p.name)
+#		property_input.clear()
+#		for p in properties:
+#			if p["class_name"] == "Texture": property_input.add_item(p.name)
 		
 #		selected_node.set(property_input.get_item_text(property_input.selected), get_icon( .hint_tooltip))
 
